@@ -1,4 +1,4 @@
-Imn the project smart traffic app open a separate folder front end in src where you can see all the seperate html css and js files
+In the project smart traffic app open a separate folder front end in src where you can see all the seperate html css and js files
 1. HTML Templates: Submit professionally designed HTML templates for user management (e.g., login, registration, user profile, etc.). Ensure semantic HTML is used to structure the content clearly and logically.
 2. CSS and Bootstrap Styling: Style the HTML templates using CSS and Bootstrap. Ensure the templates are responsive and visually consistent across different screen sizes. Use Bootstrap components effectively to achieve a professional design.
 3. JavaScript Validation and Interactivity: Implement JavaScript for form validation (e.g., email, password strength, required fields). Add interactivity, such as dynamic field error messages and live input feedback
