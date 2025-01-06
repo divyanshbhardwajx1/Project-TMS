@@ -12,4 +12,24 @@
     <servlet-name>WelcomeServlet</servlet-name>
     <url-pattern>/welcome</url-pattern>
   </servlet-mapping>  
+
+  <servlet>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <servlet-class>com.smarttraffic.servlet.UserRegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UserProfileServlet</servlet-name>
+    <servlet-class>com.smarttraffic.servlet.UserProfileServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UserProfileServlet</servlet-name>
+    <url-pattern>/profile</url-pattern>
+</servlet-mapping>
+
 </web-app>
+
