@@ -28,7 +28,7 @@ Traffic management is a critical issue in today's fast-growing cities. This **Sm
 - **Testing Framework:** JUnit
 
 --------------------------------------
-
+#PROJECT STRUCTURE
 smart-traffic-management-system/
 ├── src/
 │   ├── main/
