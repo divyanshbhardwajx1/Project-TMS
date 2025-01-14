@@ -1,46 +1,101 @@
-In the project smart traffic app open a separate folder front end in src where you can see all the seperate html css and js files
-1. HTML Templates: Submit professionally designed HTML templates for user management (e.g., login, registration, user profile, etc.). Ensure semantic HTML is used to structure the content clearly and logically.
-2. CSS and Bootstrap Styling: Style the HTML templates using CSS and Bootstrap. Ensure the templates are responsive and visually consistent across different screen sizes. Use Bootstrap components effectively to achieve a professional design.
-3. JavaScript Validation and Interactivity: Implement JavaScript for form validation (e.g., email, password strength, required fields). Add interactivity, such as dynamic field error messages and live input feedback
+# Smart Traffic Management System
 
-# Smart Traffic Management System 🚦
-
-[![Java](https://img.shields.io/badge/Java-11%2B-blue)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0.0-brightgreen)](https://spring.io/projects/spring-boot)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-The **Smart Traffic Management System** is a Java-based web application designed to optimize traffic management and provide a user-friendly platform for managing users and their information. This project features responsive design, secure authentication, and seamless database integration.
+Welcome to the **Smart Traffic Management System** project! This system leverages modern web technologies to monitor and manage traffic efficiently, ensuring smooth flow and reducing congestion in urban areas. The application is built using Spring Boot with Maven and offers RESTful APIs for seamless integration and interaction.
 
 ---
+
+## 🌟 Introduction
+Traffic management is a critical issue in today's fast-growing cities. This **Smart Traffic Management System** aims to provide an intelligent solution to monitor, control, and manage traffic data effectively. By utilizing this system, authorities can take real-time decisions to mitigate traffic jams and improve road safety.
 
 ---
 
 ## ✨ Features
-1. **User Management**:
-   - Secure login and registration.
-   - Real-time password strength validation.
-   - Profile page to view and update user information.
-2. **Responsive Design**:
-   - Fully responsive UI using Bootstrap 5.
-3. **Database Integration**:
-   - MySQL database for secure and persistent storage.
-4. **Form Validation**:
-   - Client-side validation using JavaScript.
+- **Real-Time Traffic Monitoring:** Fetch and manage traffic data efficiently.
+- **RESTful APIs:** Easy integration with other systems or mobile apps.
+- **Robust Error Handling:** Ensures application stability with meaningful error messages.
+- **Input Validation:** Validates
+ data to ensure system reliability.
+- **Logging and Debugging:** Captures critical application logs for better debugging.
 
 ---
 
-## 🛠️ Technologies Used
-- **Backend**: Java, Spring Boot
-- **Frontend**: HTML, CSS (Bootstrap), JavaScript
-- **Database**: MySQL
-- **Build Tool**: Maven
+## 🛠️ Technology Used
+- **Backend:** Spring Boot (Java)
+- **Build Tool:** Maven
+- **Validation:** Spring Boot Validation
+- **Logging:** SLF4J
+- **Database:** H2 (In-Memory Database)
+- **Testing Framework:** JUnit
 
----
+--------------------------------------
 
-## ⚙️ Setup Instructions
+smart-traffic-management-system/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/
+│   │   │       └── smarttraffic/
+│   │   │           ├── controller/                # Controllers for handling API requests
+│   │   │           │   └── TrafficController.java
+│   │   │           ├── dao/                       # Data Transfer Objects
+│   │   │           │   └── TrafficDao.java
+│   │   │           ├── exception/                 # Exception handling classes
+│   │   │           │   ├── GlobalExceptionHandler.java
+│   │   │           │   └── ResourceNotFoundException.java
+│   │   │           ├── model/                     # Entity classes representing the database tables
+│   │   │           │   └── TrafficData.java
+│   │   │           ├── repository/                # Interfaces for database interactions
+│   │   │           │   └── TrafficDataRepository.java
+│   │   │           ├── service/                   # Business logic
+│   │   │           │   └── TrafficService.java
+│   │   │           └── servlet/
+                         |__UserProfileServlet.java
+                         |__UserRegistrationServlet.java
+│   │   └── resources/
+            
+│   │    ├── application.properties                   # Application configuration
+│   │       ├── application.yml              
+│   └── test/
+│       └── java/
+│           └── com/example
+│               └── smarttraffic/controller
+│                   └── TrafficControllerTest.java # Unit tests for TrafficController
+                        /dao--TrafficDaoTest.java
+                        /model-TrafficDetails.java
+                               TrafficSignalTest.java
+                        /service--TrafficService.java
+                                   TrafficServiceTest.java
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/smart-traffic-management.git
-cd smart-traffic-management
+├── pom.xml                                        # Maven dependencies and build configuration
+├── README.md                                      # Project documentation
+└── LICENSE                                        # License for the project
+
+
+## 🚀 How to Set Up and Run the Project
+
+### Prerequisites
+1. Install **Java 17** or higher.
+2. Install **Maven 3.8** or higher.
+
+### Steps to Run
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-link>
+   cd smart-traffic-management-system
+   ```
+
+2. **Build the project**:
+   ```bash
+   mvn clean install
+   ```
+
+3. **Run the application**:
+   ```bash
+   mvn spring-boot:run
+   ```
+   
+
+4. Access the application at:
+   ```
+   http://localhost:8080
+   ```
