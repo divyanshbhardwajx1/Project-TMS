@@ -1,25 +1,27 @@
 package com.example.smarttraffic.controller;
 
-import com.example.smarttraffic.model.TrafficData;
-import com.example.smarttraffic.service.TrafficService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.smarttrafficmanagementsystem.exception.ResourceNotFoundException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/traffic")
 public class TrafficController {
-    @Autowired
-    private TrafficService trafficService;
 
-    @GetMapping
-    public List<TrafficData> getTrafficData() {
-        return trafficService.getAllTrafficData();
+    @GetMapping("/{id}")
+    public ResponseEntity<String> getTrafficData(@PathVariable Long id) {
+        // Simulate fetching traffic data
+        if (id != 1) { // Example logic
+            throw new ResourceNotFoundException("Traffic data not found for ID " + id);
+        }
+
+        return ResponseEntity.ok("Traffic data for ID " + id);
     }
 
     @PostMapping
-    public TrafficData addTrafficData(@RequestBody TrafficData trafficData) {
-        return trafficService.saveTrafficData(trafficData);
+    public ResponseEntity<String> createTrafficData(@RequestBody @Valid TrafficRequestDTO requestDTO) {
+        return ResponseEntity.ok("Traffic data created successfully");
     }
 }
