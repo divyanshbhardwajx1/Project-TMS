@@ -28,49 +28,6 @@ Traffic management is a critical issue in today's fast-growing cities. This **Sm
 - **Testing Framework:** JUnit
 
 --------------------------------------
-#PROJECT STRUCTURE
-
-smart-traffic-management-system/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/
-│   │   │       └── smarttraffic/
-│   │   │           ├── controller/                # Controllers for handling API requests
-│   │   │           │   └── TrafficController.java
-│   │   │           ├── dao/                       # Data Transfer Objects
-│   │   │           │   └── TrafficDao.java
-│   │   │           ├── exception/                 # Exception handling classes
-│   │   │           │   ├── GlobalExceptionHandler.java
-│   │   │           │   └── ResourceNotFoundException.java
-│   │   │           ├── model/                     # Entity classes representing the database tables
-│   │   │           │   └── TrafficData.java
-│   │   │           ├── repository/                # Interfaces for database interactions
-│   │   │           │   └── TrafficDataRepository.java
-│   │   │           ├── service/                   # Business logic
-│   │   │           │   └── TrafficService.java
-│   │   │           └── servlet/
-                         |__UserProfileServlet.java
-                         |__UserRegistrationServlet.java
-│   │   └── resources/
-            
-│   │    ├── application.properties                   # Application configuration
-│   │       ├── application.yml              
-│   └── test/
-│       └── java/
-│           └── com/example
-│               └── smarttraffic/controller
-│                   └── TrafficControllerTest.java # Unit tests for TrafficController
-                        /dao--TrafficDaoTest.java
-                        /model-TrafficDetails.java
-                               TrafficSignalTest.java
-                        /service--TrafficService.java
-                                   TrafficServiceTest.java
-
-├── pom.xml                                        # Maven dependencies and build configuration
-├── README.md                                      # Project documentation
-└── LICENSE                                        # License for the project
-
 
 ## 🚀 How to Set Up and Run the Project
 
